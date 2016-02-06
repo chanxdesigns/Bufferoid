@@ -1,0 +1,66 @@
+/****************************
+ * Main Source Style
+ ****************************/
+.container {
+  padding: 0 15%; }
+
+.pull-right {
+  float: right; }
+
+.pull-left {
+  float: left; }
+
+.button {
+  border: none;
+  outline: none; }
+  .button.main {
+    background: #3498db;
+    border: 1px solid #217dbb;
+    color: white;
+    font-family: "Open Sans",sans-serif;
+    font-size: 0.8rem; }
+  .button.medium {
+    padding: 10px 25px; }
+
+.html {
+  font-size: 100%; }
+
+body {
+  padding: 0;
+  margin: 0; }
+
+header {
+  background: white;
+  border-bottom: 1px solid #ccd4d5;
+  height: 50px; }
+  header .logo {
+    font-family: "Open Sans",sans-serif;
+    font-size: 1.8rem;
+    padding: 0;
+    margin: 0; }
+
+nav {
+  padding: 0;
+  margin: 0; }
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: right; }
+    nav ul li {
+      display: inline-block;
+      margin-right: 10px; }
+      nav ul li:last-of-type {
+        margin-right: 0; }
+      nav ul li a {
+        font-weight: 700;
+        text-decoration: none; }
+
+.big-background-text {
+  background: url("../img/header.jpg") fixed no-repeat center;
+  background-size: cover; }
+  .big-background-text .bg-overlay {
+    height: 700px;
+    background: rgba(255, 255, 255, 0.5);
+    font-size: 1.4rem; }
+
+/*# sourceMappingURL=style.css.map */

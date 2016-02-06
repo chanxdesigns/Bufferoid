@@ -1,0 +1,8 @@
+//Default Mixins
+@mixin fontSize ($size,$type) {
+  @if($type == 'rem') {
+    font-size: $size+rem;
+  } @else {
+    font-size: $size*10+px;
+  }
+}

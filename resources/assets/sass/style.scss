@@ -1,0 +1,102 @@
+/****************************
+ * Main Source Style
+ ****************************/
+
+@import "variables";
+@import "mixins";
+@import "utilities";
+
+.html {
+  font-size: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Open Sans", Helvetica Neue, sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  position: relative;
+  background: transparent;
+  //border-bottom: 1px solid $header-def-border;
+  height: 60px;
+  z-index: 99999;
+  padding: 20px 0!important;
+  .logo {
+    font-family: "Open Sans",sans-serif;
+    @include fontSize(2.2,rem);
+    font-weight: 700;
+    color: darken($primary-text,1%);
+    letter-spacing: -3px;
+    padding: 0;
+    margin: 0;
+    line-height: 25px;
+    span {
+      color: $accent;
+    }
+  }
+}
+
+nav {
+  font-family: "Open Sans", sans-serif;
+  padding: 0;
+  margin: 0;
+  ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: right;
+    li {
+      display: inline-block;
+      margin-right: 100px;
+      &:last-of-type {
+        margin-right: 0;
+      }
+      a {
+        font-weight: 600;
+        text-decoration: none;
+        color: $primary-text;
+      }
+    }
+  }
+}
+
+.big-background-text {
+  position: fixed;
+  top: 0;
+  background: url('../img/header.jpg') fixed no-repeat center;
+  background-size: cover;
+  width: 100%;
+  z-index: 9;
+  .bg-overlay {
+    background: transparentize(white,0.1);
+    @include fontSize(1.4,rem);
+    .textholder {
+      text-align: center;
+      padding: 300px 0;
+      h3 {
+        padding: 0;
+        margin: 0 0 20px 0;
+        font-weight: 300;
+        @include fontSize(2.6,rem);
+        color: $primary-text;
+      }
+      p {
+        @extend h3;
+        @include fontSize(1.2,rem);
+        font-weight: 400;
+      }
+    }
+  }
+}

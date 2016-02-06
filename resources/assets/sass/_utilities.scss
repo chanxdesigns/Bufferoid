@@ -1,0 +1,36 @@
+//Default Utilities
+.container {
+  padding: 0 15%;
+}
+
+.container-fluid {
+  padding: 0 5%;
+}
+
+.pull-right {
+  float: right;
+}
+
+.pull-left {
+  float: left;
+}
+
+.button {
+  border: none;
+  outline: none;
+  text-decoration: none;
+  &.main {
+    background: $primary;
+    border: 1px solid $primary-border;
+    color: white;
+    font-family: "Open Sans",sans-serif;
+    @include fontSize(0.8,rem);
+    border-radius: 30px;
+  }
+  &.medium {
+    padding: 10px 25px;
+  }
+  &.jumbo {
+    padding: 25px 60px 25px 60px;
+  }
+}

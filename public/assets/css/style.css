@@ -1,0 +1,110 @@
+/****************************
+ * Main Source Style
+ ****************************/
+.container {
+  padding: 0 15%; }
+
+.container-fluid {
+  padding: 0 5%; }
+
+.pull-right {
+  float: right; }
+
+.pull-left {
+  float: left; }
+
+.button {
+  border: none;
+  outline: none;
+  text-decoration: none; }
+  .button.main {
+    background: #3498db;
+    border: 1px solid #217dbb;
+    color: white;
+    font-family: "Open Sans",sans-serif;
+    font-size: 0.8rem;
+    border-radius: 30px; }
+  .button.medium {
+    padding: 10px 25px; }
+  .button.jumbo {
+    padding: 25px 60px 25px 60px; }
+
+.html {
+  font-size: 100%; }
+
+h1,
+h2,
+h3,
+.big-background-text .bg-overlay .textholder p,
+h4,
+h5,
+h6 {
+  font-family: "Open Sans", Helvetica Neue, sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+body {
+  padding: 0;
+  margin: 0; }
+
+header {
+  position: relative;
+  background: transparent;
+  height: 60px;
+  z-index: 99999;
+  padding: 20px 0 !important; }
+  header .logo {
+    font-family: "Open Sans",sans-serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #282c2d;
+    letter-spacing: -3px;
+    padding: 0;
+    margin: 0;
+    line-height: 25px; }
+    header .logo span {
+      color: #FF5722; }
+
+nav {
+  font-family: "Open Sans", sans-serif;
+  padding: 0;
+  margin: 0; }
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: right; }
+    nav ul li {
+      display: inline-block;
+      margin-right: 100px; }
+      nav ul li:last-of-type {
+        margin-right: 0; }
+      nav ul li a {
+        font-weight: 600;
+        text-decoration: none;
+        color: #2a2f2f; }
+
+.big-background-text {
+  position: fixed;
+  top: 0;
+  background: url("../img/header.jpg") fixed no-repeat center;
+  background-size: cover;
+  width: 100%;
+  z-index: 9; }
+  .big-background-text .bg-overlay {
+    background: rgba(255, 255, 255, 0.9);
+    font-size: 1.4rem; }
+    .big-background-text .bg-overlay .textholder {
+      text-align: center;
+      padding: 300px 0; }
+      .big-background-text .bg-overlay .textholder h3, .big-background-text .bg-overlay .textholder p {
+        padding: 0;
+        margin: 0 0 20px 0;
+        font-weight: 300;
+        font-size: 2.6rem;
+        color: #2a2f2f; }
+      .big-background-text .bg-overlay .textholder p {
+        font-size: 1.2rem;
+        font-weight: 400; }
+
+/*# sourceMappingURL=style.css.map */
